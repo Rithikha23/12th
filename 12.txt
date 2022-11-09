@@ -1,0 +1,70 @@
+package javaapplication1;
+import java.util.*;
+
+
+public class JavaApplication1 {
+
+   
+    public static void main(String[] args) {
+      
+        Integer num[]={1,6,5,9,0};
+        sample s=new sample();
+        s.min(num);
+       
+                                                                                                               
+    }
+   
+}
+class sample{
+    < T extends Comparable<T>> void min(T[]y)
+    {
+        T max;
+        min=y[0];
+        for(int i=1;i<y.length;i++ )
+        {
+         if(min.compareTo(y[i])>0){
+         
+             
+         
+             max=y[i];
+         }
+         
+        }
+        System.out.println(max);
+   
+   
+    }
+}
+    
+
+
+
+package generic;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class generic {
+    
+
+    public static void main(String[] args) {
+       ArrayList<Integer> list=new ArrayList<>(5); 
+       list.add(1,10);
+       list.add(20);
+       list.add(30);
+       list.add(40);
+       list.add(50);
+      
+       System.out.println(list);
+       ArrayList<Integer> list1=new ArrayList<>();
+       list1.add(5);
+       list1.add(7);
+       list1.add(6);
+       list.addAll(list1); 
+       System.out.println(list);
+       list1.remove(10); 
+       list.removeAll(list1);
+       
+    }
+    
+}
